@@ -17,14 +17,12 @@ h1 {
 button {
 
     width: 100%;
-    min-height: 20vh;
+    min-height: 120px;
 
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: 2em;
     padding: 12px 20px;
 
     margin-top: 20px;
-
-    display: block;
 
     cursor: pointer;
 }
