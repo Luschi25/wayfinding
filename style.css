@@ -13,3 +13,13 @@ h1 {
 .description {
     font-size: 1.3em;
 }
+
+button {
+
+    font-size: 1.2em;
+    padding: 12px 20px;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+}
