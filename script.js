@@ -11,7 +11,9 @@ window.onload = function() {
         speech.lang = "de-DE";
         speech.rate = 1.0;
         speech.pitch = 1.0;
+        
 
+        console.log(speech.voice);
         speechSynthesis.speak(speech);
     }
 }; 
