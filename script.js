@@ -16,20 +16,42 @@ window.onload = function() {
     }
 }; 
 
+// function speakText() {
+
+//     const textElement = document.getElementById("speechText");
+
+//     if(textElement){
+
+//         const text = textElement.innerText;
+
+//         const speech = new SpeechSynthesisUtterance(text);
+
+//         speech.lang = "de-DE";
+//         speech.rate = 1.0;
+//         speech.pitch = 1.0;
+
+//         speechSynthesis.speak(speech);
+//     }
+// }
+
 function speakText() {
 
-    const textElement = document.getElementById("speechText");
+    const text =
+        document.getElementById("speechText").innerText;
 
-    if(textElement){
+    const speech =
+        new SpeechSynthesisUtterance(text);
 
-        const text = textElement.innerText;
+    const voices =
+        speechSynthesis.getVoices();
 
-        const speech = new SpeechSynthesisUtterance(text);
+    speech.voice =
+        voices.find(v =>
+            v.name.includes("Katja Online"));
 
-        speech.lang = "de-DE";
-        speech.rate = 1.0;
-        speech.pitch = 1.0;
+    speech.lang = "de-DE";
+    speech.rate = 0.9;
+    speech.pitch = 1.0;
 
-        speechSynthesis.speak(speech);
-    }
+    speechSynthesis.speak(speech);
 }
