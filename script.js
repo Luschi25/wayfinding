@@ -1,22 +1,22 @@
-window.onload = function() {
+// window.onload = function() {
 
-    const textElement = document.getElementById("speechText");
+//     const textElement = document.getElementById("speechText");
 
-    if(textElement){
+//     if(textElement){
 
-        const text = textElement.innerText;
+//         const text = textElement.innerText;
 
-        const speech = new SpeechSynthesisUtterance(text);
+//         const speech = new SpeechSynthesisUtterance(text);
 
-        speech.lang = "de-DE";
-        speech.rate = 1.0;
-        speech.pitch = 1.0;
+//         speech.lang = "de-DE";
+//         speech.rate = 1.0;
+//         speech.pitch = 1.0;
         
 
-        console.log(speech.voice);
-        speechSynthesis.speak(speech);
-    }
-}; 
+//         console.log(speech.voice);
+//         speechSynthesis.speak(speech);
+//     }
+// }; 
 
 // function speakText() {
 
@@ -90,10 +90,10 @@ function speakText() {
 // //     speakText();
 // // };
 
-// window.onload = function() {
+window.onload = function() {
 
-//     setTimeout(() => {
-//         speakText();
-//     }, 500);
+    setTimeout(() => {
+        speakText();
+    }, 500);
 
-//};
+};
