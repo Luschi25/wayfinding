@@ -96,4 +96,4 @@ function speakText() {
 //         speakText();
 //     }, 500);
 
-};
+//};
